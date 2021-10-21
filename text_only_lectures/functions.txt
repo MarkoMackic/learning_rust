@@ -1,0 +1,56 @@
+/*
+
+functions defined by fn, snake case convention
+
+doesn't care about function placement, which is ok, because it's compiled
+
+PROGRAM_START 
+
+fn main() {
+    println!("Hello world");
+
+    another_function();
+}
+
+fn another_function() {
+    println!("Fuck this shit!");
+}
+
+PROGRAM_END
+
+function params:
+ * must be type annotated. 
+ 
+
+fn main()
+{
+    let x = ( let y = 6 );
+}
+
+won't compile ..  
+
+fn main()
+{
+   let x = 5;
+   let y = { 
+     let x = 3;
+     x + 1
+   }
+
+expressions don't include ending semicolon ( which means no return statement,
+just the expression without semicolon )
+
+return type specified with after arguments, like this
+
+fn five() -> i32 {
+    5 
+}
+
+fn main() {
+    let x = five();
+    println!("The value of x is {}", x);
+}
+
+
+
+*/
