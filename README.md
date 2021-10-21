@@ -4,5 +4,5 @@ Learning Rust ::
 
 Source: https://lise-henry.github.io/books/trpl2.pdf
 
-Pages processed: 67
+Pages processed: 77 
 

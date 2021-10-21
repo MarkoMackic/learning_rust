@@ -1,0 +1,80 @@
+
+IF:
+
+fn main()
+{
+    let num = 2;
+
+    if num > 5 {
+        println!("wohoo");
+    } else { 
+        println!("naah"); 
+    } 
+}
+
+(else if) also for multiple arms/branches
+
+the block for the first true condition
+
+from the prev lecture (functions.txt) combined with this:
+
+fn main() {
+    let condition = true;
+    let number = if condition {
+        5
+    } else {
+        6
+    };
+
+    println!("The value of number is {}", number);
+}
+
+same type when used as an expression
+
+LOOPS: 
+  LOOP, WHILE, FOR
+
+  break; continue; // standard 
+
+  LOOP:
+
+    loop -> infinite repetition, or must be 'broken' from inside
+     
+    fn main() {
+        loop {
+           println!("again!");
+        }
+    } 
+
+  WHILE:
+    while -> loop with condition 
+    
+    fn main() {
+       let mut num = 3;
+       while number != 0 {
+          println!("{}!", number);
+          number = number - 1;
+       }
+       println!("YO YO");
+    }
+
+  FOR:
+    for -> used to iterate over collections mostly ( while range can be collection also ) 
+
+    more efficent than while for array access ( no bounds checking injection by compiler ) 
+    
+    fn main() {
+       let a = [1,2,3];
+       for elem in a.iter() {
+         println!("val : {}", elem);
+       }
+    }
+   
+   Range rev -> reverse range iteration 
+
+   fn main() {
+     for number in (1..4).rev() {
+        println!("{}!", number);
+     }
+   }
+
