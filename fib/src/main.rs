@@ -1,7 +1,7 @@
 use std::io;
 
 fn fib(n: u32) -> u32 {
-    if n == 1 || n == 0 {
+    if n <= 1 {
         n
     }
     else
